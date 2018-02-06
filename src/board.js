@@ -1,7 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Square from './square';
 
 class Board extends React.Component {
+  static get propTypes() {
+    return {
+      squares: PropTypes.arrayOf(PropTypes.string).isRequired,
+      onClick: PropTypes.func.isRequired,
+    };
+  }
   renderSquare(i) {
     return (
       <Square
