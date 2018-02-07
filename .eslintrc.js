@@ -3,6 +3,7 @@ module.exports = {
     "env": {
         "es6": true,
         "browser": true,
+        "jest": true,
     },
     "rules": {
         // .jsx is legacy according to 
